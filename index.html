@@ -27,6 +27,7 @@ box-shadow: 10px 10px black;
     
    }
    .attribution > div {
+    
     grid-template-columns: auto;
     margin: 0 50px;
     
@@ -43,9 +44,12 @@ box-shadow: 10px 10px black;
     font-size: large;
     font-weight: 700;
    }
-    button:hover {
+    a:hover {
       color: yellow;
       cursor: pointer;
+    }
+    a {
+      text-decoration: none;
     }
 
    .para {
@@ -62,15 +66,50 @@ color: grey;
  @media only screen and (min-width: 768px) {
   .attribution {
     display: flex;
-flex-direction: column;
-justify-content: center;
-margin: 220px 400px;
+        flex-direction: column;
+    justify-content: center;
+    margin: 220px 480px;
   }
   .attribution > div {
-   
-    margin: 0 100px;
-   
+   width: 100%;
+    justify-content: center;
+    margin: 0 5px;
+  
    }
+   
+   button {
+    background-color: hsl(47, 88%, 63%);
+    border: 0cap;
+    font-size: large;
+    font-weight: 700;
+    margin: 10px 20px;
+  }
+  a, .one{
+    text-decoration: none;
+    margin: 0 20px;
+  }
+     a:hover {
+      color: yellow;
+      cursor: pointer;
+      text-decoration: none;
+      
+    }
+
+   .para {
+color: grey;
+font-size: larger;
+margin: 0 20px;
+
+   }
+
+ .spa{
+  font-weight: 900;
+  
+ }
+ .avator  {
+  display: flex;
+margin: 10px 20px;
+ }
  }
   </style>
 </head>
@@ -119,11 +158,11 @@ margin: 220px 400px;
     <button>Learning</button>
     
     
-    <p>Published 21 Dec 2023</p>
+    <p class="one">Published 21 Dec 2023</p>
     
-    <h2>HTML & CSS Foundations</h2>
+    <h2> <a href="">HTML & CSS Foundations</a></h2>
     
-    <p class="para">These laguages are the backbone of every website, defining structure, content and presentation.</p>
+    <p class="para"> These laguages are the backbone of every website, defining structure, content and presentation.</p>
 
 <div class="avator"> <img src="assets\images\image-avatar.webp" alt="Greg Hooper">  
 <p class="spa">Greg Hooper</p> 
