@@ -10,25 +10,63 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    
    body {
     background-color: hsl(47, 88%, 63%);
+    box-sizing: border-box;
    } 
    .attribution {
     background-color: white;
  display: grid;
-
-justify-content: center;
-
+align-content: center;
 grid-template-columns: auto;
+margin: 200px 20px;
+border-radius: 10px;
+border: solid 1px;
+box-shadow: black;
     
+   }
+   .attribution > div {
+    grid-template-columns: auto;
+    margin: 0 50px;
+   
    }
    svg {
    padding: 24px 0;
+   width: 100%;
+   border-radius: 40px;
    }
    button {
     background-color: hsl(47, 88%, 63%);
-    
+    border: 0cap;
+    font-size: large;
+    font-weight: 700;
    }
+
+   .para {
+color: grey;
+   }
+ .spa{
+  font-weight: 600;
+ }
+ .avator {
+  display: flex;
+  gap: 9px;
+ }
+  
+ @media only screen and (min-width: 768px) {
+  .attribution {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 10% 30%;
+  }
+  .attribution > div {
+   
+    margin: 0 100px;
+   
+   }
+ }
   </style>
 </head>
 <body>
@@ -36,8 +74,10 @@ grid-template-columns: auto;
  
   
   <div class="attribution">
-    <main>
-    <svg xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
+    
+    
+    <div>  
+      <svg xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201">
       <g clip-path="url(#a)">
         <path fill="#F4D04E" d="M0 .5h336v200H0z" />
         <rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 87.996 77.729)" />
@@ -69,11 +109,22 @@ grid-template-columns: auto;
         </clipPath>
       </defs>
     </svg>
+    </div>
+    <div>
     <button>Learning</button>
+    
+    
     <p>Published 21 Dec 2023</p>
+    
     <h2>HTML & CSS Foundations</h2>
-    <p>These laguages are the backbone of every website, defining structure, content and presentation.</p>
-  </main>
+    
+    <p class="para">These laguages are the backbone of every website, defining structure, content and presentation.</p>
+
+<div class="avator"> <img src="assets\images\image-avatar.webp" alt="Greg Hooper">  
+<p class="spa">Greg Hooper</p> 
+</div>
+</div>
+  
   </div>
 </body>
 </html>
